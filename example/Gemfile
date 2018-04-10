@@ -1,0 +1,7 @@
+source :rubygems
+
+gem 'omniauth-nokia', path: '../'
+gem 'oauth', path: '/Users/danielnelson/work/reference/oauth-ruby/'
+gem 'pry'
+gem 'pry-stack_explorer'
+gem 'sinatra'
