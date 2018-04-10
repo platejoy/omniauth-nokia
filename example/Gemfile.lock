@@ -2,7 +2,7 @@ PATH
   remote: ..
   specs:
     omniauth-nokia (0.0.1)
-      multi_json
+      oauth (~> 0.5)
       omniauth-oauth (~> 1.1)
 
 PATH
@@ -19,7 +19,6 @@ GEM
     debug_inspector (0.0.3)
     hashie (3.5.7)
     method_source (0.8.2)
-    multi_json (1.13.1)
     mustermann (1.0.2)
     omniauth (1.8.1)
       hashie (>= 3.4.6, < 3.6.0)

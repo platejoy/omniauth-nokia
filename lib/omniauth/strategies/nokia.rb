@@ -1,6 +1,4 @@
-require 'multi_json'
 require 'omniauth-oauth'
-
 module OmniAuth
   module Strategies
     class Nokia < OmniAuth::Strategies::OAuth
@@ -38,18 +36,6 @@ module OmniAuth
           secret: request.params['oauth_verifier'],
         }
       end
-
-      # extra do
-      #   {
-      #     # raw_info: raw_info,
-      #     raw_info: {},
-      #   }
-      # end
-
-      # def raw_info
-      #   url = 'https://api.health.nokia.com/measure'
-      #   @raw_info ||= MultiJson.load(access_token.get(url).body)
-      # end
     end
   end
 end

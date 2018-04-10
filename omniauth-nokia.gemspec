@@ -1,11 +1,11 @@
 
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "omniauth/nokia/version"
+require "omniauth-nokia/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "omniauth-nokia"
-  spec.version       = Omniauth::Nokia::VERSION
+  spec.version       = OmniAuth::Nokia::VERSION
   spec.authors       = ["Daniel Nelson"]
   spec.email         = ["daniel@platejoy.com"]
 
