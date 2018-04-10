@@ -1,17 +1,6 @@
-source "http://rubygems.org"
+source "https://rubygems.org"
 
+git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
+
+# Specify your gem's dependencies in omniauth-nokia.gemspec
 gemspec
-
-gem 'omniauth-oauth', '~> 1.1'
-
-group :development, :test do
-  gem 'multi_json'
-  gem 'nokogiri'
-  gem 'rack-test'
-  gem 'rspec'
-end
-
-group :test do
-  gem 'rspec-mocks'
-  gem 'webmock'
-end

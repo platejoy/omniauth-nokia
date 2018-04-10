@@ -2,6 +2,25 @@
 
 This is an OmniAuth OAuth 1.0 strategy for authenticating with the [Nokia OAuth 1.0 api](see https://developer.health.nokia.com/api).
 
+TODO: Delete this and the text above, and describe your gem
+
+## Installation
+
+Add this line to your application's Gemfile:
+
+```ruby
+gem 'omniauth-nokia'
+```
+
+And then execute:
+
+    $ bundle
+
+Or install it yourself as:
+
+    $ gem install omniauth-nokia
+
+
 ## Get your Nokia credentials
 
 To register your application with Nokia and obtain a consumer key and secret, go to the [Nokia application registration](https://developer.health.nokia.com/partner/add).
@@ -68,7 +87,7 @@ api_access_token = OAuth::AccessToken.from_hash(oauth_consumer, {
 uri = "https://api.health.nokia.com/measure?action=getmeas&userid=#{nokia_user_id}"
 
 request = api_access_token.get(uri)
-MultiJson.load(request.body)
+JSON.parse(request.body)
 ```
 
 ## About OmniAuth
@@ -78,6 +97,10 @@ For additional information about OmniAuth, visit [OmniAuth wiki](https://github.
 For a short tutorial on how to use OmniAuth in your Rails application, visit [this tutsplus.com tutorial](http://net.tutsplus.com/tutorials/ruby/how-to-use-omniauth-to-authenticate-your-users/).
 
 (The above adapted from [omniauth-fitbit](https://github.com/tkgospodinov/omniauth-fitbit))
+
+## Contributing
+
+Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/omniauth-nokia.
 
 ## Original License
 
