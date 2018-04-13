@@ -64,9 +64,9 @@ In your controller action (responding to /auth/nokia/callback), get nokia_user_i
 
 ```ruby
 nokia_params = request.env['omniauth.auth']
-nokia_user_id = nokia_params['uid']
-nokia_user_access_token = nokia_params['extra']['access_token'].token
-nokia_user_access_token_secret = nokia_params['extra']['access_token'].secret
+nokia_user_id = nokia_params[:uid]
+nokia_user_access_token = nokia_params[:extra][:access_token][:token]
+nokia_user_access_token_secret = nokia_params[:extra][:access_token][:secret]
 ```
 
 To interact with the Nokia API (e.g. retrieve weight measurements recorded by a Nokia scale):
