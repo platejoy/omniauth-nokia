@@ -40,7 +40,7 @@ get '/auth/nokia/callback' do
   })
 
   # Change the uri to access other Nokia API endpoints
-  uri = "https://api.health.nokia.com/measure?action=getmeas&userid=#{nokia_user_id}"
+  uri = "https://api.health.nokia.com/measure?action=getmeas&meastype=1&userid=#{nokia_user_id}"
 
   request = api_access_token.get(uri)
   # MultiJson.load(request.body)
